@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>File manager dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="profile">
+                <img src="profile-picture.jpg" alt="profile picture" class="profile-picture">
+                <div class="details">
+                    <h4>Takeshi Kovacks</h4>
+                    <p>takeshi84@carbon.com</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#"><i class="far fa-clock"></i>  Recent files</a>
+                <a href="#"><i class="far fa-copy"></i>  Documents</a>
+                <a href="#"><i class="fas fa-film"></i>  Videos</a>
+            </nav>
+            <div class="upgrade-card">
+                <h3>Upgrade to PRO</h3>
+                <p>Unlock features like collaboration and ulimited storage</p>
+                <a href="#">Upgrade Account</a>
+            </div>
+            <footer>
+                <p class="left-text">Edit menu</p>
+                <p class="right-text">Help</p>
+            </footer>
+        </div>
+        <div class="main-area">
+            <div class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="file-name" id="fileName" placeholder="Search">
+                </div>
+                <p>Last modified</p>
+            </div>
+            <hr>
+            <div class="table">
+                <div class="table-head">
+                    <h4>Name</h4>
+                    <h4>Last modified</h4>
+                    <h4>Kind</h4>
+                </div>
+                <div class="table-body">
+                    <a href="#" class="file-link">
+                        <p>Day 4 App Dashboard Design</p>
+                        <p>Just now</p>
+                        <p>React app</p>
+                    </a>
+                    <a href="#" class="file-link">
+                        <p>Tourism and the econony</p>
+                        <p>Yesterday</p>
+                        <p>PDF</p>
+                    </a>
+                    <a href="#" class="file-link">
+                        <p>Proposed Airport</p>
+                        <p>Yesterday</p>
+                        <p>AutoCAD file</p>
+                    </a>
+                    <a href="#" class="file-link">
+                        <p>Signup Component</p>
+                        <p>Last week</p>
+                        <p>Adobe Illustrator Document</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
