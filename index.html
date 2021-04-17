@@ -9,6 +9,7 @@
     <title>File manager dashboard</title>
 </head>
 <body>
+    <button id="menuBtn"><i class="fas fa-bars"></i></button>
     <div class="container">
         <div class="menu">
             <div class="profile">
@@ -69,9 +70,30 @@
                         <p>Last week</p>
                         <p>Adobe Illustrator Document</p>
                     </a>
+                    <a href="#" class="file-link">
+                        <p>Umbrella icon</p>
+                        <p>Last month</p>
+                        <p>SVG</p>
+                    </a>
+                    <a href="#" class="file-link">
+                        <p>img30813124</p>
+                        <p>2 months ago</p>
+                        <p>JPEG</p>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const menu = document.querySelector(".menu")
+        const btn = document.querySelector("#menuBtn")
+        btn.addEventListener("click", () => {
+            if(menu.style.display === "block") {
+                menu.style.display = "none"
+            } else {
+                menu.style.display = "block"
+            }
+        })
+    </script>
 </body>
 </html>

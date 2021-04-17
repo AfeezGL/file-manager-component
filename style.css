@@ -14,6 +14,11 @@ body {
     height: 100vh;
     background-color: #DEDEED;
 }
+#menuBtn {
+    position: fixed;
+    right: 0;
+    z-index: 20;
+}
 .container {
     background-color: white;
     padding: 1em;
@@ -22,6 +27,7 @@ body {
     gap: 1em;
     width: 97vw;
     max-width: 1080px;
+    min-height: 592px;
 }
 .menu {
     background-color: #DEDEED;
@@ -180,6 +186,9 @@ footer {
 }
 
 @media(min-width: 859px) {
+    #menuBtn {
+        display: none;
+    }
     .menu{
         position: relative;
         display: block;
