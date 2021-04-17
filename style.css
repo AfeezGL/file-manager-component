@@ -9,18 +9,18 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 body {
-    display: grid;
-    place-content: center;
-    height: 100vh;
     background-color: #DEDEED;
 }
 #menuBtn {
     position: fixed;
+    font-size: 1.5rem;
+    padding: .2rem .5rem;
     right: 0;
     z-index: 20;
 }
 .container {
     background-color: white;
+    margin: 0 auto;
     padding: 1em;
     border-radius: 1em;
     display: flex;
@@ -192,5 +192,13 @@ footer {
     .menu{
         position: relative;
         display: block;
+    }
+}
+
+@media(min-height:700px) {
+    body {
+        display: grid;
+        place-content: center;
+        height: 100vh;
     }
 }
